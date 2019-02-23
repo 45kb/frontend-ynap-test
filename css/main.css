@@ -1,0 +1,210 @@
+html,
+body {
+  font-size: 0.6rem;
+  background-color: #666;
+}
+
+.bg-gradient,
+.nav-pills .nav-link,
+#newsletter-form button {
+  background: #ccc;
+  background: -moz-linear-gradient(bottom, #ccc 0%, #fff 100%);
+  background: -webkit-linear-gradient(bottom, #ccc 0%, #fff 100%);
+  background: linear-gradient(to top, #ccc 0%, #fff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccc', endColorstr='#fff',GradientType=0 );
+}
+
+.bg-gradient-active,
+.nav-pills .nav-link:hover,
+.nav-pills .active,
+#newsletter-form button:hover {
+  background: #ccc;
+  background: -moz-linear-gradient(top, #ccc 0%, #fff 100%);
+  background: -webkit-linear-gradient(top, #ccc 0%, #fff 100%);
+  background: linear-gradient(to bottom, #ccc 0%, #fff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#ccc',GradientType=0 );
+}
+
+.big-title-text {
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  font-weight: 400;
+  font-size: 24px;
+  font-size: 2.4rem;
+  line-height: 28px;
+  line-height: 2.8rem;
+}
+
+.common-text,
+.loading-text,
+.nav-pills .nav-link,
+.nav-pills .active,
+#newsletter-form input[type="email"],
+#newsletter-form button,
+#newsletter-msg {
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  font-weight: 400;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 21px;
+  line-height: 2.1rem;
+}
+.common-text strong,
+.loading-text strong,
+.nav-pills .nav-link strong,
+.nav-pills .active strong,
+#newsletter-form input[type="email"] strong,
+#newsletter-form button strong,
+#newsletter-msg strong {
+  font-weight: 700;
+}
+
+.common-padding,
+p,
+.news-wrapper,
+.tab-pane {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.container {
+  max-width: 1024px;
+  background-color: #fff;
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.nopadding-column {
+  padding: 0;
+}
+.ynap-logo {
+  width: 100%;
+  margin: 18px 0 22px 0;
+  display: block;
+}
+.header img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+.main-text {
+  opacity: 0;
+}
+.news-wrapper {
+  background-color: #f2f2f2;
+  border-right: 15px solid #fff;
+  border-left: 15px solid #fff;
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.nav-pills .nav-link {
+  border: 1px solid #333;
+  padding: 0.4rem 1rem;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  margin-right: 10px;
+  color: #333;
+}
+.nav-pills .nav-link:hover {
+  border-color: #666;
+}
+.nav-pills .active {
+  color: #333 !important;
+}
+
+.tab-pane {
+  padding-bottom: 0;
+  text-transform: initial;
+}
+
+.news-title {
+  padding-bottom: 14px;
+  text-transform: uppercase;
+}
+
+.news-text p {
+  padding-top: 0;
+  padding-right: 1.5rem;
+}
+.news-text p:first-letter {
+  text-transform: capitalize;
+}
+.newsletter-form-wrapper [class*="col-"] {
+  padding: 0;
+}
+#newsletter-form input[type="email"] {
+  border-radius: 0;
+  border: 1px solid #666;
+  padding: 15px 10px;
+}
+#newsletter-form button {
+  border-radius: 0;
+  background-color: #fff;
+  border: 1px solid #666;
+  padding: 0 10px;
+}
+#newsletter-msg {
+  color: green;
+  opacity: 0;
+}
+footer {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  text-align: center;
+  color: #fff;
+  background-color: #333;
+  font-size: 1.1rem;
+}
+footer a {
+  color: #fff;
+}
+footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+@media (min-width: 768px) {
+  .mypadding-column {
+    padding-right: 28px;
+    padding-left: 28px;
+  }
+
+  .common-padding,
+  p,
+  .news-wrapper {
+    padding-top: 28px;
+  }
+
+  .news-title {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .news-text {
+    -webkit-column-count: 2;
+    /* Chrome, Safari*/
+    column-count: 2;
+    margin-top: -30px;
+  }
+  .news-wrapper {
+    border-right: 28px solid #fff;
+    border-left: 28px solid #fff;
+  }
+}
+@media (min-width: 576px) {
+  .ynap-logo {
+    height: 86px;
+    margin: 28px 0 0 0;
+  }
+  .ynap-logo img {
+    width: auto;
+    height: 100%;
+  }
+}
